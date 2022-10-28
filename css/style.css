@@ -24,11 +24,12 @@
 }
 
 #about {
-    display: flex;  
-    padding-left: 300px;
-    padding-right: 300px;
+    display: flex;
+    padding: 50px;
+    -ms-flex-align: center;
     padding-top: 170px;
     padding-bottom: 80px;
+    width: 100%;
 }
 
 .profile {
@@ -84,11 +85,18 @@
     padding: 30px;
     padding-top: 90px;
     padding-bottom: 70px;
+    display: block;
+    text-align: center;
 }
 
-#education .card {
-    margin-top: 50px;
-    margin-left: 400px;
+.univ {
+    padding-top: 20px;
+}
+
+#tombol {
+    border-radius: 10px;
+    padding: 5px;
+    width: 150px;
 }
 
 #skills {
@@ -128,8 +136,10 @@
 }
 
 .webdev {
-    width: 500px;
-    padding: 50px;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    padding-right: 50px;
 }
 
 .deskripsi {
@@ -137,9 +147,18 @@
 }
 
 #award {
-    padding-left: 200px;
-    padding-right: 200px;
     padding-top: 70px;
+}
+
+#carouselExampleCaptions {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+#img {
+    align-content: center;
+    justify-content: center;
 }
 
 .footer {
@@ -147,4 +166,42 @@
     text-align: center;
     color: aliceblue;
     padding: 40px;
+}
+
+@media (max-width: 922px) {
+    #interest {
+        display: block;
+        text-align: center;
+    }
+
+    .webdev {
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 75%;
+        height: 75%;
+    }
+}
+
+@media (max-width: 576px) {
+    #about {
+        display: block;
+        width: 100%;
+        padding-top: 80px;
+    }
+
+    .profile h2 {
+        padding-top: 10px;
+    }
+    .detail h1 {
+        font-size: 30px;
+    }
+
+    #award {
+        padding: 50px;
+        padding-top: 70px;
+    }
+
+    #carouselExampleCaptions {
+        width: 75%;
+    }
 }
